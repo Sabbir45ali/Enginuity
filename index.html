@@ -33,29 +33,29 @@
     </div>
     <ul class="flex space-x-6 font-medium">
       <li><a href="#home"
-          class="relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Home</a>
+          class=" nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Home</a>
       </li>
       <li><a href="#about"
-          class="relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">About</a>
+          class=" nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">About</a>
       </li>
       <li><a href="#details"
-          class="relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Details</a>
+          class=" nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Details</a>
       </li>
       <li><a href="#venue"
-          class="relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Venue</a>
+          class="nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Venue</a>
       </li>
       <li><a href="#sponsors"
-          class="relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Sponsors</a>
+          class=" nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Sponsors</a>
       </li>
-      <li><a href="#contacts"
-          class="relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Contact</a>
+      <li><a href="#contact"
+          class="nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Contact</a>
       </li>
     </ul>
 
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('./Assets/bg.png');">
+  <section id="home" class=" relative h-screen bg-cover bg-center" style="background-image: url('./Assets/bg.png');">
     <!-- semi-transparent overlay -->
     <div class="absolute inset-0 bg-black/70"></div>
     <div
@@ -241,7 +241,7 @@
 
 
       <!-- Rules & Regulations -->
-      <section class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black text-white py-10 px-4 md:px-16 rounded-2xl max-w-5xl mx-auto shadow-lg">
+      <div id="rules" class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black text-white py-10 px-4 md:px-16 rounded-2xl max-w-5xl mx-auto shadow-lg">
         <div class="flex justify-center">
           <h2
             class="text-cyan-400 text-2xl md:text-3xl font-bold text-center mb-6 border-b border-cyan-500 inline-block pb-2">
@@ -311,7 +311,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
 
     </div>
   </section>
@@ -356,7 +356,7 @@
       </div>
     </div>
   </section>
-  <section id='sponsors'class="relative bg-white  px-4 py-16 min-h-[90vh] text-white">
+  <section id='sponsors'class="relative bg-white  px-4 py-16 min-h-[90vh] text-white ">
     <div class="flex flex-col items-center">
         <h2 class="text-3xl md:text-4xl font-bold text-[#001B30]">SPONSORS</h2>
         <div class="relative mt-2 w-24">
@@ -365,52 +365,59 @@
         </div>
       </div>
   </section>
-  <footer id="contacts" class="py-8 px-4">
-    <div class="max-w-9xl mx-[150px] grid md:grid-cols-3 gap-16">
-      
-      <!-- Left Section -->
-      <div class="border-r border-blue-500 pr-10">
-        <h4 class="text-lg font-semibold mb-2">Department of Electronics and Communication Engineering</h4>
-        <p class="text-sm text-gray-300 mb-1">JIS COLLEGE OF ENGINEERING</p>
-        <p class="text-sm text-gray-400 mb-4">Kalyani, Nadia</p>
-        <div class="flex items-center mb-2">
-          <i class="fa-solid fa-phone mr-2 text-white border-2 border-white rounded-full"></i>
-          <a href="tel:+918976444530" class="text-sm text-gray-300 hover:text-white">+91 8976444530</a>
-        </div>
-        <div class="flex items-center">
-          <i class="fa-solid fa-envelope mr-2 text-pink-500"></i>
-          <a href="mailto:sayani908@gmail.com" class="text-sm text-gray-300 hover:text-white">sayani908@gmail.com</a>
-        </div>
+  <section id="contact" class="py-8 px-4 bg-[black] text-white min-h-[300px]">
+  <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-16 px-6">
+    
+    <!-- Left Section -->
+    <div class="flex flex-col gap-3 border-r border-blue-500 pr-6">
+      <h4 class="text-lg font-semibold">Department of Electronics and Communication Engineering</h4>
+      <p class="text-sm text-gray-300">JIS COLLEGE OF ENGINEERING</p>
+      <p class="text-sm text-gray-400">Kalyani, Nadia</p>
+
+      <div class="flex items-center">
+        <span class="w-7 h-7 flex items-center justify-center border-2 border-[#0098DF] rounded-full text-[#0098DF] mr-2">
+          <i class="fa-solid fa-phone text-xs"></i>
+        </span>
+        <a href="tel:+918976444530" class="text-sm text-gray-300 hover:text-white">+91 8976444530</a>
       </div>
 
-      <!-- Middle Section -->
-      <div class="border-r border-blue-500 px-10">
-        <h4 class="text-lg font-semibold mb-4">For Queries</h4>
-        <ul class="space-y-2 text-sm text-gray-300">
-          <li>pqr chakraborty (<a href="tel:+91819087788" class="underline hover:text-white">+91 819087788</a>)</li>
-          <li>xyz sarkar (<a href="tel:+91825089899" class="underline hover:text-white">+91 825089899</a>)</li>
-          <li>abc roy (<a href="tel:+91890986666" class="underline hover:text-white">+91 890986666</a>)</li>
-        </ul>
-      </div>
-
-      <!-- Right Section -->
-      <div class="pl-10">
-        <h4 class="text-lg font-semibold mb-4">Useful Links</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="text-gray-300 hover:text-white underline">Home</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white underline">About us</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white underline">Rules & Regulations</a></li>
-        </ul>
+      <div class="flex items-center">
+        <span class="w-7 h-7 flex items-center justify-center border-2 border-[#0098DF] rounded-full text-[#0098DF] mr-2">
+          <i class="fa-solid fa-envelope text-xs"></i>
+        </span>
+        <a href="mailto:sayani908@gmail.com" class="text-sm text-gray-300 hover:text-white">sayani908@gmail.com</a>
       </div>
     </div>
 
-    <!-- Scroll to top button -->
-    <div class="flex justify-end mt-6 max-w-9xl mx-auto px-4">
-      <button id="scrollToTopBtn" class="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-all">
-        <i class="fa-solid fa-arrow-up text-white text-lg"></i>
-      </button>
+    <!-- Middle Section -->
+    <div class="flex flex-col gap-3 border-r border-blue-500 px-6">
+      <h4 class="text-lg font-semibold">For Queries</h4>
+      <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
+        <li>pqr chakraborty (<a href="tel:+91819087788" class="underline hover:text-white">+91 819087788</a>)</li>
+        <li>xyz sarkar (<a href="tel:+91825089899" class="underline hover:text-white">+91 825089899</a>)</li>
+        <li>abc roy (<a href="tel:+91890986666" class="underline hover:text-white">+91 890986666</a>)</li>
+      </ul>
     </div>
-  </footer>
+
+    <!-- Right Section -->
+    <div class="flex flex-col gap-3 pl-6">
+      <h4 class="text-lg font-semibold">Useful Links</h4>
+      <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
+        <li><a href="#home" class=" nav-link hover:text-white underline">Home</a></li>
+        <li><a href="#about" class="nav-link hover:text-white underline">About us</a></li>
+        <li><a href="#rules" class="nav-link hover:text-white underline">Rules & Regulations</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Scroll to top button -->
+  <div class="flex justify-end mt-6 max-w-7xl mx-auto px-6 fixed bottom-4 right-4 z-50">
+    <button id="scrollToTopBtn" class=" hidden h-[50px] w-[50px] bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-all">
+      <i class="fa-solid fa-arrow-up text-white text-lg"></i>
+    </button>
+  </div>
+</section>
+
   <!-- Your JS -->
   <script src="index.js"></script>
 </body>
