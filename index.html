@@ -19,40 +19,65 @@
 <body class="bg-black text-white">
 
   <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full flex items-center justify-between px-8 py-4 bg-black z-20">
-    <div class="flex items-center space-x-4">
-      <a href="https://www.jiscollege.ac.in/" target="_blank"><img src="./Assets/Copy of JISCE.png" alt="Logo"
-          class="h-10 w-auto" /></a>
-      <a href="https://idealnet.aicte.gov.in/" target="_blank"><img src="./Assets/IDEA-LAB-LOGO-removebg-preview.png"
-          alt="Logo" class="h-10 w-auto" /></a>
-      <a href="https://mic.gov.in/" target="_blank"><img src="./Assets/images.png" alt="Logo" class="h-10 w-auto" /></a>
-      <a href="http://naac.gov.in/index.php/en/info-for-institutions" target="_blank"><img
-          src="./Assets/IQAC-removebg-preview.png" alt="Logo" class="h-10 w-auto" /></a>
-      <a href="https://www.jisgroup.org/" target="_blank"><img src="./Assets/JIS_Group.png" alt="Logo"
-          class="h-10 w-auto" /></a>
-    </div>
-    <ul class="flex space-x-6 font-medium">
-      <li><a href="#home"
-          class=" nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Home</a>
-      </li>
-      <li><a href="#about"
-          class=" nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">About</a>
-      </li>
-      <li><a href="#details"
-          class=" nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Details</a>
-      </li>
-      <li><a href="#venue"
-          class="nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Venue</a>
-      </li>
-      <li><a href="#sponsors"
-          class=" nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Sponsors</a>
-      </li>
-      <li><a href="#contact"
-          class="nav-link relative pb-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full ">Contact</a>
-      </li>
-    </ul>
+  <nav class="fixed top-0 left-0 w-full bg-black z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
 
+        <!-- Logo section -->
+        <div class="flex items-center space-x-4">
+          <a href="https://www.jiscollege.ac.in/" target="_blank">
+            <img src="./Assets/Copy of JISCE.png" alt="Logo" class="h-10 w-auto" />
+          </a>
+          <a href="https://idealnet.aicte.gov.in/" target="_blank">
+            <img src="./Assets/IDEA-LAB-LOGO-removebg-preview.png" alt="Logo" class="h-10 w-auto" />
+          </a>
+          <a href="https://mic.gov.in/" target="_blank">
+            <img src="./Assets/images.png" alt="Logo" class="h-10 w-auto" />
+          </a>
+          <a href="http://naac.gov.in/index.php/en/info-for-institutions" target="_blank">
+            <img src="./Assets/IQAC-removebg-preview.png" alt="Logo" class="h-10 w-auto" />
+          </a>
+          <a href="https://www.jisgroup.org/" target="_blank">
+            <img src="./Assets/JIS_Group.png" alt="Logo" class="h-10 w-auto" />
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul id="nav-links"
+          class="hidden md:flex space-x-6 font-medium text-white items-center transition-all duration-300">
+          <li><a href="#home" class="nav-link pb-1 relative hover:after:w-full">Home</a></li>
+          <li><a href="#about" class="nav-link pb-1 relative hover:after:w-full">About</a></li>
+          <li><a href="#details" class="nav-link pb-1 relative hover:after:w-full">Details</a></li>
+          <li><a href="#venue" class="nav-link pb-1 relative hover:after:w-full">Venue</a></li>
+          <li><a href="#sponsors" class="nav-link pb-1 relative hover:after:w-full">Sponsors</a></li>
+          <li><a href="#contact" class="nav-link pb-1 relative hover:after:w-full">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile dropdown menu -->
+      <ul id="mobile-menu"
+        class="md:hidden flex-col space-y-2 font-medium text-white mt-4 hidden transition-all duration-300">
+        <li><a href="#home" class="block py-2">Home</a></li>
+        <li><a href="#about" class="block py-2">About</a></li>
+        <li><a href="#details" class="block py-2">Details</a></li>
+        <li><a href="#venue" class="block py-2">Venue</a></li>
+        <li><a href="#sponsors" class="block py-2">Sponsors</a></li>
+        <li><a href="#contact" class="block py-2">Contact</a></li>
+      </ul>
+    </div>
   </nav>
+
+
 
   <!-- Hero Section -->
   <section id="home" class=" relative h-screen bg-cover bg-center" style="background-image: url('./Assets/bg.png');">
@@ -60,18 +85,23 @@
     <div class="absolute inset-0 bg-black/70"></div>
     <div
       class="relative z-10 flex flex-col items-center justify-center text-center h-full px-6 transform -translate-x-40 translate-y-5">
-      <h2 class="text-2xl md:text-3xl font-light mb-6 text-gray-200">
-        DEPARTMENT OF ELECTRONICS AND <br class="hidden md:block" />
-        COMMUNICATION ENGINEERING ORGANIZING
+      <h3 class="text-6xl md:text-6xl font-bold mb-6 text-gray-200">
+        JIS College of Engineering
+      </h3>
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-200">
+        DEPARTMENT OF ELECTRONICS AND
+        COMMUNICATION ENGINEERING
+        <br>ORGANIZING
+        <br class="font-slim text-xl">Hardware Engineering Model Competition
       </h2>
       <h1 class="text-5xl md:text-6xl font-extrabold text-cyan-400 mb-2">
         ENGINUITY <span class="text-white text-3xl md:text-4xl font-bold">2025</span>
       </h1>
-      <h3 class="text-xl md:text-2xl text-cyan-400 mb-6">
-        THE HARDWARE ARENA
-      </h3>
-      <p class="text-base md:text-lg text-gray-300">
-        August 8–9th, JIS College of Engineering
+      <br>
+      <p class="text-sm md:text-3xl font-light text-gray-200">
+        On
+      <p class="text-2xl text-bold md:text-2xl text-gray-300">
+        August 8–9th
       </p>
     </div>
   </section>
@@ -95,13 +125,20 @@
         <div>
           <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">CALL FOR PARTICIPATION</h3>
           <p>
-            ACM Kolkata Chapter appeals to the faculty members in the East and North-East India who are acting as the
-            Supervisors to nominate their students for the ACM Kolkata ’UG Project Contest Award in Computing for 2025.
+            The primary objective of ENGINUITY 2025 is to foster innovation and technical excellence among engineering
+            students by providing a competitive and collaborative platform for showcasing hardware-based engineering
+            models and prototypes. The event aims to encourage problem-solving, creativity, and interdisciplinary
+            thinking by addressing real-world technological challenges through hands-on solutions. Additionally,
+            ENGINUITY seeks to promote knowledge exchange, peer learning, and industry-academia interaction through
+            keynote talks, exhibitions, and interactive sessions.
+            This competition aims to: <br>
+          <p class="mt-3">
+            • Promote innovation and technical creativity among engineering students. <br>
+            • Encourage hands-on learning through real-world problem-solving. <br>
+            • Identify and nurture talent in emerging domains like IoT, Embedded Systems, Automation, and Renewable
+            Energy.
           </p>
-          <p>
-            A team from an Institute shall consist of UG students in the second/third or final year of their studies in
-            CS/IT or in allied streams. Each team needs nominations from the respective Project Supervisor and
-            HoD/Institute Head. Each institute/department can nominate a maximum of 3 teams for the contest.
+
           </p>
         </div>
 
@@ -111,10 +148,7 @@
             <li>
               Fill the nomination form online:
               <a href="https://forms.gle/9ZaNeT7MAPS6L3DD8" target="_blank" class="text-cyan-400 underline">Google
-                Form</a>. Upload the scanned copy of nomination form
-              <a href="#" class="text-cyan-400 underline">[Doc 2]</a> (signed by supervisor & HoD/Director). Then upload
-              the project description
-              <a href="#" class="text-cyan-400 underline">[Doc 3]</a>.
+                Form</a>
             </li>
             <li><b>Registration Fee:</b>
               <strong>₹500 per team (up to 4 members); ₹100 for each additional member</strong>
@@ -129,9 +163,16 @@
         <div class="flex-1">
           <h3 class="text-xl font-semibold text-white mb-3">Important Dates</h3>
           <ul class="list-disc list-inside text-gray-200 space-y-1">
-            <li>Deadline for Submission of nominations: <span class="text-cyan-400">XYZ 20, 2025</span></li>
-            <li>Deadline for Submission of final report: <span class="text-cyan-400">XYZ 1, 2025</span></li>
-            <li>Project presentation &amp; Announcement of Results: <span class="text-cyan-400">XYZ 11, 2025</span></li>
+            <li>Registration starts: <span class="text-cyan-400">May 10, 2025</span></li>
+            <li>Deadline of registration: <span class="text-cyan-400">July 20, 2025</span></li>
+            <li>
+              Project presentation &amp; Announcement of Results:
+              <br>
+              <span class="text-cyan-400 inline-block pl-3">August 8th–9th, 2025</span>
+            </li>
+
+
+            <!-- Make aug shift right 20px -->
           </ul>
         </div>
 
@@ -141,9 +182,6 @@
           <ul class="list-disc list-inside space-y-1">
             <li><a href="https://forms.gle/9ZaNeT7MAPS6L3DD8" target="_blank"
                 class="text-cyan-400 hover:underline">Online Registration Link</a></li>
-            <li><a href="#" class="text-cyan-400 hover:underline">Download CFP</a></li>
-            <li><a href="#" class="text-cyan-400 hover:underline">Download Nomination Form [Doc 2]</a></li>
-            <li><a href="#" class="text-cyan-400 hover:underline">Download Project Description Doc [Doc 3]</a></li>
             <li><a href="#" class="text-cyan-400 hover:underline">Payment Link – TBD</a></li>
           </ul>
         </div>
@@ -170,21 +208,23 @@
         <div class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black shadow-xl p-6 rounded-3xl w-[1000px]">
           <h3 class="text-lg font-semibold text-white mb-2">Procedure for adjudication:</h3>
           <p class="text-gray-200">
-            All entries will be evaluated by a Selection Committee from the JIS COLLEGE OF ENGINEERING. The shortlisted
+            All entries will be evaluated by a Industrials and Academic Experts. All
             teams
-            will be asked to present in front of a panel of juries on Aug 9th and 10th, 2025, at the JIS COLLEGE OF ENGINEERING, Kalyani, Nadia. Based on the presentation with demostration and documents uploaded, winners will be
+            will be asked to present in front of a panel of juries on Aug 8th and 9th, 2025, at the JIS COLLEGE OF
+            ENGINEERING, Kalyani, Nadia. Based on the presentation with demostration, winners
+            will be
             selected. Winners will receive cash prizes/vouchers and certificates. All participants will
             receive certificates for participation.
           </p>
         </div>
-
+        <!-- All are justify center -->
         <!-- Awards Card -->
         <div class="bg-[#0A1A2E] bg-opacity-50 p-6 rounded-3xl w-[1000px]">
           <h3 class="text-lg font-semibold text-white mb-2">Awards</h3>
           <p class="text-gray-200">
             Total Prize Worth 90,000/- and Prototypes recommended by experts will be fully.
             sponsored to file Intellectual Property Rights (IPR) in collaboration with JIS College of
-            Engineering:
+            Engineering
           </p>
         </div>
 
@@ -203,18 +243,18 @@
         <div class="flex flex-col md:flex-row  md:gap-10 items-start justify-center px-8">
 
           <!-- Category Card 1 -->
-          <div class="p-6 rounded-lg w-[420px]  justify-center">
+          <div class="p-4 rounded-lg w-[420px]  justify-center">
             <h3 class="text-[22px] font-semibold text-cyan-200 mb-4">1. Embedtronics</h3>
             <ul class="list-disc list-inside text-gray-200 space-y-2">
-              <li class="text-[15px] leading-tight">Smart home or smart city solutions</li>
-              <li class="text-[15px] leading-tight">Wearable health monitors</li>
-              <li class="text-[15px] leading-tight">IoT-based environmental monitoring</li>
-              <li class="text-[15px] leading-tight">Agricultural automation tools</li>
-              <li class="text-[15px] leading-tight">Home security systems with sensors & alerts</li>
-              <li class="text-[15px] leading-tight">Autonomous drones or vehicles</li>
+              <li class="text-[15px] leading-tight">IoT & AI powered Smart Home or Smart City Solutions</li>
+              <li class="text-[15px] leading-tight">IoT-Based Environmental Monitoring</li>
+              <li class="text-[15px] leading-tight">Agricultural Automation Tools</li>
+              <li class="text-[15px] leading-tight">Home Security Systems</li>
+              <li class="text-[15px] leading-tight">Sustainable Irrigation or Water Purification Systems </li>
+              <li class="text-[15px] leading-tight">Industrial Automation Prototypes</li>
               <li class="text-[15px] leading-tight">Sensor-based automation systems</li>
               <li class="text-[15px] leading-tight">Humanoid Robots</li>
-              <li class="text-[15px] leading-tight">Miscellaneous</li>
+              <li class="text-[15px] leading-tight">Miscellaneous Innovations in Embedded Technologies</li>
             </ul>
           </div>
 
@@ -222,18 +262,19 @@
           <!-- <div class=" w-px bg-cyan-400 h-auto"></div> -->
 
           <!-- Category Card 2 -->
-          <div class="p-6 rounded-lg w-[420px]">
+          <div class=" rounded-lg w-[420px]">
             <h3 class="text-[22px] font-semibold text-cyan-200 mb-4">2. EnerTronix</h3>
             <ul class="list-disc list-inside text-gray-200 space-y-2">
               <li class="text-[15px] leading-tight">Solar-powered gadgets or appliances</li>
               <li class="text-[15px] leading-tight">Energy harvesting devices</li>
               <li class="text-[15px] leading-tight">Portable wind or hydro generators</li>
-              <li class="text-[15px] leading-tight">Sustainable irrigation or water purification systems</li>
+              <li class="text-[15px] leading-tight">IoT & AI powered Smart Measurement or Monitoring Tools</li>
               <li class="text-[15px] leading-tight">Smart measurement tools</li>
-              <li class="text-[15px] leading-tight">Automated test prototype or simulators</li>
+              <li class="text-[15px] leading-tight">Automated Test Rigs or Simulators</li>
               <li class="text-[15px] leading-tight">Motor control systems and actuators</li>
-              <li class="text-[15px] leading-tight">Industrial automation prototypes</li>
-              <li class="text-[15px] leading-tight">Miscellaneous</li>
+              <li class="text-[15px] leading-tight">Autonomous Drones or Vehicles</li>
+              <li class="text-[15px] leading-tight">Wearable Health Monitors</li>
+              <li class="text-[15px] leading-tight">Miscellaneous Innovations in Green Tech and Mechatronics</li>
             </ul>
           </div>
 
