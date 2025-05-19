@@ -12,15 +12,17 @@
   <style>
     html {
       scroll-behavior: smooth;
-      
+
     }
+
     .scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
 </head>
 
@@ -29,343 +31,383 @@
   <!-- Navbar -->
   <nav class="fixed top-0 left-0 w-full bg-black z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
+      <div class="flex items-center justify-between h-16">
 
-            <!-- Logo section -->
-            <div class="flex items-center space-x-4">
-                <a href="https://www.jiscollege.ac.in/" target="_blank">
-                    <img src="./Assets/Copy of JISCE.png" alt="Logo" class="h-10 w-auto" />
-                </a>
-                <a href="https://idealnet.aicte.gov.in/" target="_blank">
-                    <img src="./Assets/IDEA-LAB-LOGO-removebg-preview.png" alt="Logo" class="h-10 w-auto" />
-                </a>
-                <a href="https://mic.gov.in/" target="_blank">
-                    <img src="./Assets/images.png" alt="Logo" class="h-10 w-auto" />
-                </a>
-                <a href="http://naac.gov.in/index.php/en/info-for-institutions" target="_blank">
-                    <img src="./Assets/IQAC-removebg-preview.png" alt="Logo" class="h-10 w-auto" />
-                </a>
-                <a href="https://www.jisgroup.org/" target="_blank">
-                    <img src="./Assets/JIS_Group.png" alt="Logo" class="h-10 w-auto" />
-                </a>
-            </div>
-
-            <!-- Mobile menu button -->
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Navigation Links -->
-            <ul id="nav-links" class="hidden md:flex space-x-6 font-medium text-white items-center transition-all duration-300">
-                <li><a href="#home" class="nav-link pb-1 relative hover:after:w-full hover:bg-color-blue">Home</a></li>
-                <li><a href="#about" class="nav-link pb-1 relative hover:after:w-full">About</a></li>
-                <li><a href="#details" class="nav-link pb-1 relative hover:after:w-full">Details</a></li>
-                <li><a href="#venue" class="nav-link pb-1 relative hover:after:w-full">Venue</a></li>
-                <li><a href="#sponsors" class="nav-link pb-1 relative hover:after:w-full">Sponsors</a></li>
-                <li><a href="#contact" class="nav-link pb-1 relative hover:after:w-full">Contact</a></li>
-            </ul>
+        <!-- Logo section -->
+        <div class="flex items-center space-x-4">
+          <a href="https://www.jiscollege.ac.in/" target="_blank">
+            <img src="./Assets/Copy of JISCE.png" alt="Logo" class="h-16 w-auto" />
+          </a>
+          <a href="https://idealnet.aicte.gov.in/" target="_blank">
+            <img src="./Assets/IDEA-LAB-LOGO-removebg-preview.png" alt="Logo" class="h-12 w-auto" />
+          </a>
+          <a href="https://www.ieindia.org/webui/iei-home.aspx" target="_blank">
+            <img src="./Assets/IEI.jpg" alt="Logo" class="h-12 w-auto" />
+          </a>
+          <a href="https://mic.gov.in/" target="_blank">
+            <img src="./Assets/images.png" alt="Logo" class="h-12 w-auto" />
+          </a>
+          <a href="http://naac.gov.in/index.php/en/info-for-institutions" target="_blank">
+            <img src="./Assets/IQAC-removebg-preview.png" alt="Logo" class="h-12 w-auto" />
+          </a>
+          <a href="https://www.jisgroup.org/" target="_blank">
+            <img src="./Assets/JIS_Group.png" alt="Logo" class="h-16 w-auto" />
+          </a>
         </div>
 
-        <!-- Mobile dropdown menu -->
-        <ul id="mobile-menu" class="md:hidden flex-col space-y-2 font-medium text-white mt-4 hidden transition-all duration-300">
-            <li><a href="#home" class="block py-2">Home</a></li>
-            <li><a href="#about" class="block py-2">About</a></li>
-            <li><a href="#details" class="block py-2">Details</a></li>
-            <li><a href="#venue" class="block py-2">Venue</a></li>
-            <li><a href="#sponsors" class="block py-2">Sponsors</a></li>
-            <li><a href="#contact" class="block py-2">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
 
-
- <!-- Hero Section -->
-<section id="home" class="relative h-screen bg-cover bg-center pt-16" style="background-image: url('./Assets/bg.png');">
-  <!-- semi-transparent overlay -->
-  <div class="absolute inset-0 bg-black/70"></div>
-  <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-6">
-    <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-200">
-      JIS College of Engineering
-    </h3>
-    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-gray-200">
-      DEPARTMENT OF ELECTRONICS AND
-      COMMUNICATION ENGINEERING
-      <br>ORGANIZING
-      <br class="hidden sm:block">
-      Hardware Engineering Model Competition
-    </h2>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-cyan-400 mb-2">
-      ENGINUITY <span class="text-white text-2xl sm:text-3xl md:text-4xl font-bold">2025</span>
-    </h1>
-    <p class="text-sm sm:text-lg md:text-xl font-light text-gray-200">
-      On
-    </p>
-    <p class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-300">
-      August 8–9th
-    </p>
-  </div>
-</section>
- <!-- About Section -->
-<section id="about" class="relative min-h-[100vh] bg-gradient-to-b from-[#00121E] to-transparent px-4 py-8">
-  <!-- Content wrapper -->
-  <div class="relative z-10 max-w-5xl mx-auto px-4 space-y-6 transform translate-y-8">
-    <!-- Title -->
-    <div class="flex flex-col items-center mb-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400">ABOUT</h2>
-      <div class="relative mt-2 w-20">
-        <span class="block h-[3px] bg-cyan-400"></span>
-        <span class="absolute -left-2 -top-1 w-3 h-3 bg-cyan-400 rounded-full"></span>
-      </div>
-    </div>
-
-    <!-- Justified Content -->
-    <div class="text-gray-200 space-y-4 text-justify">
-      <div>
-        <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">CALL FOR PARTICIPATION</h3>
-        <p class="text-justify">
-          The primary objective of ENGINUITY 2025 is to foster innovation and technical excellence among engineering
-          students by providing a competitive and collaborative platform for showcasing hardware-based engineering
-          models and prototypes. The event aims to encourage problem-solving, creativity, and interdisciplinary
-          thinking by addressing real-world technological challenges through hands-on solutions. Additionally,
-          ENGINUITY seeks to promote knowledge exchange, peer learning, and industry-academia interaction through
-          keynote talks, exhibitions, and interactive sessions.
-          This competition aims to: <br>
-        <p class="mt-3">
-          • Promote innovation and technical creativity among engineering students. <br>
-          • Encourage hands-on learning through real-world problem-solving. <br>
-          • Identify and nurture talent in emerging domains like IoT, Embedded Systems, Automation, and Renewable
-          Energy.
-        </p>
-        </p>
-      </div>
-
-      <div>
-        <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">HOW TO APPLY?</h3>
-        <ol class="list-decimal list-inside space-y-2">
-          <li>
-            Fill the nomination form online:
-            <a href="https://forms.gle/9ZaNeT7MAPS6L3DD8" target="_blank" class="text-cyan-400 underline">Google Form</a>
-          </li>
-          <li><b>Registration Fee:</b>
-            <strong>₹500 per team (up to 4 members); ₹100 for each additional member</strong>
-          </li>
-        </ol>
-      </div>
-
-    </div>
-    <!-- Important Dates & Links -->
-    <div class="scroll-container mt-10 flex flex-col md:flex-row justify-between gap-8">
-      <!-- Important Dates -->
-      <div class="flex-1">
-        <h3 class="text-xl font-semibold text-white mb-3">Important Dates</h3>
-        <ul class="list-disc list-inside text-gray-200 space-y-1">
-          <li>Registration starts: <span class="text-cyan-400">May 10, 2025</span></li>
-          <li>Deadline of registration: <span class="text-cyan-400">July 20, 2025</span></li>
-          <li>
-            Project presentation &amp; Announcement of Results:
-            <br>
-            <span class="text-cyan-400 inline-block pl-3 md:pl-5">August 8th–9th, 2025</span>
-          </li>
+        <!-- Navigation Links -->
+        <ul id="nav-links"
+          class="hidden md:flex space-x-6 font-medium text-white items-center transition-all duration-300">
+          <li><a href="#home" class="nav-link pb-1 relative hover:after:w-full hover:bg-color-blue">Home</a></li>
+          <li><a href="#about" class="nav-link pb-1 relative hover:after:w-full">About</a></li>
+          <li><a href="#details" class="nav-link pb-1 relative hover:after:w-full">Details</a></li>
+          <li><a href="#venue" class="nav-link pb-1 relative hover:after:w-full">Venue</a></li>
+          <li><a href="#sponsors" class="nav-link pb-1 relative hover:after:w-full">Sponsors</a></li>
+          <li><a href="#contact" class="nav-link pb-1 relative hover:after:w-full">Contact</a></li>
         </ul>
       </div>
-    
-      <!-- Links -->
-      <div class="flex-1">
-        <h3 class="text-xl font-semibold text-white mb-3">Links</h3>
-        <ul class="list-disc list-inside space-y-1">
-          <li><a href="https://forms.gle/9ZaNeT7MAPS6L3DD8" target="_blank" class="text-cyan-400 hover:underline">Online Registration Link</a></li>
-        </ul>
-      </div>
-    </div>
-</section>
 
-
-  <section id="details" class="relative bg-gradient-to-b from-transparent via-[#081219] to-[#060A0D] px-4 py-16 min-h-[150vh]">
-  <div class="relative z-10 max-w-5xl mx-auto flex flex-col space-y-12">
-    <!-- Heading -->
-    <div class="flex flex-col items-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400">DETAILS</h2>
-      <div class="relative mt-2 w-24">
-        <span class="block h-[3px] bg-cyan-400"></span>
-        <span class="absolute -left-2 -top-1 w-3 h-3 bg-cyan-400 rounded-full"></span>
-      </div>
-    </div>
-
-    <!-- Procedure & Awards Row -->
-<!-- Scrollable Container with Hidden Scrollbar -->
-<div class="flex gap-6 overflow-x-auto px-4 py-4 scrollbar-hide">
-  
-  <!-- Procedure Card -->
-  <div class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black shadow-xl p-6 rounded-3xl min-w-[500px] max-w-[500px] h-auto">
-    <h3 class="text-lg font-semibold text-white mb-2">Procedure for adjudication:</h3>
-    <p class="text-gray-200 text-justify text-sm leading-relaxed break-words">
-      All entries will be evaluated by Industrial and Academic Experts. All teams will be asked to present in front of a panel of juries on Aug 8th and 9th, 2025, at the JIS COLLEGE OF ENGINEERING, Kalyani, Nadia. Based on the presentation with demonstration, winners will be selected. Winners will receive cash prizes/vouchers and certificates. All participants will receive certificates for participation.
-    </p>
-  </div>
-
-  <!-- Awards Card -->
-  <div class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black shadow-xl p-6 rounded-3xl min-w-[400px] max-w-[400px] h-auto">
-    <h3 class="text-lg font-semibold text-white mb-2">Awards</h3>
-    <p class="text-gray-200 text-justify text-sm leading-relaxed break-words">
-      Total Prize Worth ₹90,000/- and Prototypes recommended by experts will be fully sponsored to file Intellectual Property Rights (IPR) in collaboration with JIS College of Engineering.
-    </p>
-  </div>
-</div>
-
-
- <!-- Categories Container -->
-<div class="bg-[#0A1A2E] bg-opacity-30 p-10 rounded-3xl border-2 border-black shadow-xl flex flex-col items-center justify-center">
-  <!-- Heading -->
-  <h2 class="text-2xl font-bold text-white mb-5">Categories:</h2>
-
-  <!-- Flex Layout for Columns -->
-  <div class="flex flex-col md:flex-row gap-10 items-start justify-between w-full max-w-5xl">
-
-    <!-- Column 1 -->
-    <div class="flex-1 p-4 rounded-lg">
-      <h3 class="text-[22px] font-semibold text-cyan-200 mb-4">1. Embedtronics</h3>
-      <ul class="list-disc list-inside text-gray-200 space-y-2">
-        <li class="text-[15px] leading-snug">IoT & AI powered Smart Home or Smart City Solutions</li>
-        <li class="text-[15px] leading-snug">IoT-Based Environmental Monitoring</li>
-        <li class="text-[15px] leading-snug">Agricultural Automation Tools</li>
-        <li class="text-[15px] leading-snug">Home Security Systems</li>
-        <li class="text-[15px] leading-snug">Sustainable Irrigation or Water Purification Systems</li>
-        <li class="text-[15px] leading-snug">Industrial Automation Prototypes</li>
-        <li class="text-[15px] leading-snug">Sensor-based automation systems</li>
-        <li class="text-[15px] leading-snug">Humanoid Robots</li>
-        <li class="text-[15px] leading-snug">Miscellaneous Innovations in Embedded Technologies</li>
+      <!-- Mobile dropdown menu -->
+      <ul id="mobile-menu"
+        class="md:hidden flex-col space-y-2 font-medium text-white mt-4 hidden transition-all duration-300">
+        <li><a href="#home" class="block py-2">Home</a></li>
+        <li><a href="#about" class="block py-2">About</a></li>
+        <li><a href="#details" class="block py-2">Details</a></li>
+        <li><a href="#venue" class="block py-2">Venue</a></li>
+        <li><a href="#sponsors" class="block py-2">Sponsors</a></li>
+        <li><a href="#contact" class="block py-2">Contact</a></li>
       </ul>
     </div>
+  </nav>
 
-    <!-- Column 2 -->
-    <div class="flex-1 p-4 rounded-lg">
-      <h3 class="text-[22px] font-semibold text-cyan-200 mb-4">2. EnerTronix</h3>
-      <ul class="list-disc list-inside text-gray-200 space-y-2">
-        <li class="text-[15px] leading-snug">Solar-powered gadgets or appliances</li>
-        <li class="text-[15px] leading-snug">Energy harvesting devices</li>
-        <li class="text-[15px] leading-snug">Portable wind or hydro generators</li>
-        <li class="text-[15px] leading-snug">IoT & AI powered Smart Measurement or Monitoring Tools</li>
-        <li class="text-[15px] leading-snug">Smart measurement tools</li>
-        <li class="text-[15px] leading-snug">Automated Test Rigs or Simulators</li>
-        <li class="text-[15px] leading-snug">Motor control systems and actuators</li>
-        <li class="text-[15px] leading-snug">Autonomous Drones or Vehicles</li>
-        <li class="text-[15px] leading-snug">Wearable Health Monitors</li>
-        <li class="text-[15px] leading-snug">Miscellaneous Innovations in Green Tech and Mechatronics</li>
-      </ul>
-    </div>
 
-  </div>
-</div>
-
-    <!-- Rules & Regulations -->
-    <div id="rules" class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black text-white py-10 px-4 md:px-16 rounded-2xl max-w-5xl mx-auto shadow-lg">
-      <div class="flex justify-center">
-        <h2 class="text-cyan-400 text-2xl md:text-3xl font-bold text-center mb-6 border-b border-cyan-500 inline-block pb-2">
-          — Rules & Regulations —
-        </h2>
-      </div>
-      <p class="text-sm md:text-base text-center text-gray-300 max-w-4xl mx-auto mb-8">
-        Welcome to the ENGINUITY THE HARDWARE ARENA! JIS COLLEGE OF ENGINEERING<br>
-        This event encourages creativity, innovation, and teamwork as participants design and construct models showcasing their technical skills.
-        To ensure a fair and enjoyable experience for everyone, please adhere to the following rules and regulations:
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen bg-cover bg-center pt-16"
+    style="background-image: url('./Assets/bg.png');">
+    <!-- semi-transparent overlay -->
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-6">
+      <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-200">
+        JIS College of Engineering
+      </h3>
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-gray-200">
+        DEPARTMENT OF ELECTRONICS AND
+        COMMUNICATION ENGINEERING
+        <br>ORGANIZING
+        <br class="hidden sm:block">
+        Hardware Engineering Model Competition
+      </h2>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-cyan-400 mb-2">
+        ENGINUITY <span class="text-white text-2xl sm:text-3xl md:text-4xl font-bold">2025</span>
+      </h1>
+      <p class="text-sm sm:text-lg md:text-xl font-light text-gray-200">
+        On
       </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm md:text-base">
-        <ul class="space-y-4 text-justify">
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span> All team members must be from the same college.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span> Same team leader cannot lead more than one team.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>All participants must register online before the deadline. Late entries will not be accepted.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Participants can use any materials except for pre-made kits or fully assembled models. All components must be sourced and assembled independently.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Each team must prepare a brief presentation (maximum 5 minutes) to explain their model’s functionality and design process.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Every team member must carry their college ID, a valid government ID, and a copy of the registration receipt.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Models should be stable, demonstrable, and built to withstand basic handling for judging and presentation.
-          </li>
-        </ul>
-
-        <ul class="space-y-4 text-justify">
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span> Participants requiring hostel accommodation must request it during registration (only for long-distance participants).
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span> Judges’ decisions will be final.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>100% software-based projects will not be accepted. Models must involve a combination of hardware and software integration. Software projects without hardware are disqualified.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>The model should be safe to operate and must not involve any hazardous materials, open flames, or high-voltage elements without proper insulation.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Teams are responsible for bringing all required tools and equipment. Organizers will not provide any hardware or support tools.
-          </li>
-          <li class="flex items-start">
-            <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Plagiarism or copying existing market products without any innovation will result in disqualification.
-          </li>
-        </ul>
-      </div>
+      <p class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-300">
+        August 8th–9th
+      </p>
     </div>
-  </div>
-</section>
-
-
- <section id="venue" class="relative bg-gradient-to-b from-transparent via-[#060A0D] to-[#081A27] px-4 py-16 min-h-[90vh] text-white">
-  <div class="relative z-10 max-w-6xl mx-auto flex flex-col space-y-12">
-
-    <!-- Heading -->
-    <div class="flex flex-col items-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400">VENUE</h2>
-      <div class="relative mt-2 w-24">
-        <span class="block h-[3px] bg-cyan-400"></span>
-        <span class="absolute -left-2 -top-1 w-3 h-3 bg-cyan-400 rounded-full"></span>
-      </div>
-      <p class="mt-2 text-lg font-semibold">Location & Info</p>
-    </div>
-
-    <!-- Location Info Section -->
-    <div class="flex flex-col md:flex-row gap-4 w-full max-w-6xl mx-auto px-4">
-
-      <!-- Google Map -->
-      <div class="w-full md:w-1/2 h-[350px] mb-4 md:mb-0">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.745961340439!2d88.44517707590316!3d22.959581118674883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027730302f6e25%3A0xe50dfccae21e1fc!2sJIS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1746031415835!5m2!1sen!2sin"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="relative min-h-[100vh] bg-gradient-to-b from-[#00121E] to-transparent px-4 py-8">
+    <!-- Content wrapper -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 space-y-6 transform translate-y-8">
+      <!-- Title -->
+      <div class="flex flex-col items-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400">ABOUT</h2>
+        <div class="relative mt-2 w-20">
+          <span class="block h-[3px] bg-cyan-400"></span>
+          <span class="absolute -left-2 -top-1 w-3 h-3 bg-cyan-400 rounded-full"></span>
+        </div>
       </div>
 
-      <!-- Image with text overlay -->
-      <div class="w-full md:w-1/2 h-[350px] relative">
-        <img src="./Assets/Venue.png" alt="JIS College" class="rounded-lg shadow-lg w-full h-full object-cover">
+      <!-- Justified Content -->
+      <div class="text-gray-200 space-y-4 text-justify">
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">CALL FOR PARTICIPATION</h3>
+          <p class="text-justify">
+            The primary objective of ENGINUITY 2025 is to foster innovation and technical excellence among engineering
+            students by providing a competitive and collaborative platform for showcasing hardware-based engineering
+            models and prototypes. The event aims to encourage problem-solving, creativity, and interdisciplinary
+            thinking by addressing real-world technological challenges through hands-on solutions. Additionally,
+            ENGINUITY seeks to promote knowledge exchange, peer learning, and industry-academia interaction through
+            keynote talks, exhibitions, and interactive sessions.
+            This competition aims to: <br>
+          <p class="mt-3">
+            • Promote innovation and technical creativity among engineering students. <br>
+            • Encourage hands-on learning through real-world problem-solving. <br>
+            • Identify and nurture talent in emerging domains like IoT, Embedded Systems, Automation, and Renewable
+            Energy.
+          </p>
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">HOW TO APPLY?</h3>
+          <ol class="list-decimal list-inside space-y-2">
+            <li>
+              Fill the nomination form online:
+              <a href="https://forms.gle/9ZaNeT7MAPS6L3DD8" target="_blank" class="text-cyan-400 underline">Google
+                Form</a>
+            </li>
+            <li><b>Registration Fee:</b>
+              <strong>₹500 per team (up to 4 members); ₹100 for each additional member</strong>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+      <!-- Important Dates & Links -->
+      <div class="scroll-container mt-10 flex flex-col md:flex-row justify-between gap-8">
+        <!-- Important Dates -->
+        <div class="flex-1">
+          <h3 class="text-xl font-semibold text-white mb-3">Important Dates</h3>
+          <ul class="list-disc list-inside text-gray-200 space-y-1">
+            <li>Registration starts: <span class="text-cyan-400">May 10, 2025</span></li>
+            <li>Deadline of registration: <span class="text-cyan-400">July 20, 2025</span></li>
+            <li>
+              Project presentation &amp; Announcement of Results:
+              <br>
+              <span class="text-cyan-400 inline-block pl-3 md:pl-5">August 8th–9th, 2025</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Links -->
+        <div class="flex-1">
+          <h3 class="text-xl font-semibold text-white mb-3">Links</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><a href="https://forms.gle/9ZaNeT7MAPS6L3DD8" target="_blank"
+                class="text-cyan-400 hover:underline">Online Registration Link</a></li>
+            <li><a href="https://forms.gle/9ZaNeT7MAPS6L3DD8" target="_blank"
+                class="text-cyan-400 hover:underline">Registration Fee Paymnet Link</a></li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+
+  <section id="details"
+    class="relative bg-gradient-to-b from-transparent via-[#081219] to-[#060A0D] px-4 py-16 min-h-[150vh]">
+    <div class="relative z-10 max-w-5xl mx-auto flex flex-col space-y-12">
+      <!-- Heading -->
+      <div class="flex flex-col items-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400">DETAILS</h2>
+        <div class="relative mt-2 w-24">
+          <span class="block h-[3px] bg-cyan-400"></span>
+          <span class="absolute -left-2 -top-1 w-3 h-3 bg-cyan-400 rounded-full"></span>
+        </div>
+      </div>
+
+      <!-- Procedure & Awards Row -->
+      <!-- Scrollable Container with Hidden Scrollbar -->
+      <div class="flex gap-6 overflow-x-auto px-4 py-4 scrollbar-hide">
+
+        <!-- Procedure Card -->
         <div
-          class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 rounded-lg p-4 text-center">
-          <p class="text-lg font-semibold leading-relaxed">
-            <span class="block text-2xl font-bold">JIS COLLEGE OF ENGINEERING</span>
-            Block A, Phase III,<br>
-            Kalyani, Nadia – 741235,<br>
-            West Bengal
+          class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black shadow-xl p-6 rounded-3xl min-w-[500px] max-w-[500px] h-auto">
+          <h3 class="text-lg font-semibold text-white mb-2">Procedure for adjudication:</h3>
+          <p class="text-gray-200 text-justify text-sm leading-relaxed break-words">
+            All entries will be evaluated by Industrial and Academic Experts. All teams will be asked to present in
+            front of a panel of juries on Aug 8th and 9th, 2025, at the JIS COLLEGE OF ENGINEERING, Kalyani, Nadia.
+            Based on the presentation with hardware model demonstration, winners will be selected. Winners will receive
+            cash
+            prizes, trophys and certificates. All participants will receive certificates for participation.
+          </p>
+        </div>
+
+        <!-- Awards Card -->
+        <div
+          class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black shadow-xl p-6 rounded-3xl min-w-[400px] max-w-[400px] h-auto">
+          <h3 class="text-lg font-semibold text-white mb-2">Awards</h3>
+          <p class="text-gray-200 text-justify text-sm leading-relaxed break-words">
+            <b>Total Prize Money Worth ₹90,000/-</b> and Prototypes recommended by experts will be fully sponsored to
+            file
+            Intellectual Property Rights (IPR) in collaboration with JIS College of Engineering.
           </p>
         </div>
       </div>
+
+
+      <!-- Categories Container -->
+      <div
+        class="bg-[#0A1A2E] bg-opacity-30 p-10 rounded-3xl border-2 border-black shadow-xl flex flex-col items-center justify-center">
+        <!-- Heading -->
+        <h2 class="text-2xl font-bold text-white mb-5">Categories:</h2>
+
+        <!-- Flex Layout for Columns -->
+        <div class="flex flex-col md:flex-row gap-10 items-start justify-between w-full max-w-5xl">
+
+          <!-- Column 1 -->
+          <div class="flex-1 p-4 rounded-lg">
+            <h3 class="text-[22px] font-semibold text-cyan-200 mb-4">1. Embedtronics</h3>
+            <ul class="list-disc list-inside text-gray-200 space-y-2">
+              <li class="text-[15px] leading-snug">IoT & AI powered Smart Home or Smart City Solutions</li>
+              <li class="text-[15px] leading-snug">IoT-Based Environmental Monitoring</li>
+              <li class="text-[15px] leading-snug">Agricultural Automation Tools</li>
+              <li class="text-[15px] leading-snug">Home Security Systems</li>
+              <li class="text-[15px] leading-snug">Sustainable Irrigation or Water Purification Systems</li>
+              <li class="text-[15px] leading-snug">Industrial Automation Prototypes</li>
+              <li class="text-[15px] leading-snug">Sensor-based automation systems</li>
+              <li class="text-[15px] leading-snug">Humanoid Robots</li>
+              <li class="text-[15px] leading-snug">Miscellaneous Innovations in Embedded Technologies</li>
+            </ul>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="flex-1 p-4 rounded-lg">
+            <h3 class="text-[22px] font-semibold text-cyan-200 mb-4">2. EnerTronix</h3>
+            <ul class="list-disc list-inside text-gray-200 space-y-2">
+              <li class="text-[15px] leading-snug">Solar-powered gadgets or appliances</li>
+              <li class="text-[15px] leading-snug">Energy harvesting devices</li>
+              <li class="text-[15px] leading-snug">Portable wind or hydro generators</li>
+              <li class="text-[15px] leading-snug">IoT & AI powered Smart Measurement or Monitoring Tools</li>
+              <li class="text-[15px] leading-snug">Smart measurement tools</li>
+              <li class="text-[15px] leading-snug">Automated Test Rigs or Simulators</li>
+              <li class="text-[15px] leading-snug">Motor control systems and actuators</li>
+              <li class="text-[15px] leading-snug">Autonomous Drones or Vehicles</li>
+              <li class="text-[15px] leading-snug">Wearable Health Monitors</li>
+              <li class="text-[15px] leading-snug">Miscellaneous Innovations in Green Tech and Mechatronics</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Rules & Regulations -->
+      <div id="rules"
+        class="bg-[#0A1A2E] bg-opacity-30 border-2 border-black text-white py-10 px-4 md:px-16 rounded-2xl max-w-5xl mx-auto shadow-lg">
+        <div class="flex justify-center">
+          <h2
+            class="text-cyan-400 text-2xl md:text-3xl font-bold text-center mb-6 border-b border-cyan-500 inline-block pb-2">
+            — Rules & Regulations —
+          </h2>
+        </div>
+        <p class="text-sm md:text-base text-center text-gray-300 max-w-4xl mx-auto mb-8">
+          Welcome to the ENGINUITY THE HARDWARE ARENA! JIS COLLEGE OF ENGINEERING<br>
+          This event encourages creativity, innovation, and teamwork as participants design and construct models
+          showcasing their technical skills.
+          To ensure a fair and enjoyable experience for everyone, please adhere to the following rules and regulations:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm md:text-base">
+          <ul class="space-y-4 text-justify">
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span> All team members must be
+              from the same college.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span> Same team leader cannot
+              lead more than one team.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>All participants must
+              register online before the deadline. Late entries will not be accepted.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Participants can use any
+              materials except for pre-made kits or fully assembled models. All components must be sourced and assembled
+              independently.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Each team must prepare a
+              brief presentation (maximum 5 minutes) to explain their model’s functionality and design process.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Every team member must
+              carry their college ID, a valid government ID, and a copy of the registration receipt.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Models should be stable,
+              demonstrable, and built to withstand basic handling for judging and presentation.
+            </li>
+          </ul>
+
+          <ul class="space-y-4 text-justify">
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span> Participants requiring
+              hostel accommodation must request it during registration (only for long-distance participants).
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span> Judges’ decisions will be
+              final.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>100% software-based
+              projects will not be accepted. Models must involve a combination of hardware and software integration.
+              Software projects without hardware are disqualified.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>The model should be safe to
+              operate and must not involve any hazardous materials, open flames, or high-voltage elements without proper
+              insulation.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Teams are responsible for
+              bringing all required tools and equipment. Organizers will not provide any hardware or support tools.
+            </li>
+            <li class="flex items-start">
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Plagiarism or copying
+              existing market products without any innovation will result in disqualification.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+
+  <section id="venue"
+    class="relative bg-gradient-to-b from-transparent via-[#060A0D] to-[#081A27] px-4 py-16 min-h-[90vh] text-white">
+    <div class="relative z-10 max-w-6xl mx-auto flex flex-col space-y-12">
+
+      <!-- Heading -->
+      <div class="flex flex-col items-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400">VENUE</h2>
+        <div class="relative mt-2 w-24">
+          <span class="block h-[3px] bg-cyan-400"></span>
+          <span class="absolute -left-2 -top-1 w-3 h-3 bg-cyan-400 rounded-full"></span>
+        </div>
+        <p class="mt-2 text-lg font-semibold">Location & Info</p>
+      </div>
+
+      <!-- Location Info Section -->
+      <div class="flex flex-col md:flex-row gap-4 w-full max-w-6xl mx-auto px-4">
+
+        <!-- Google Map -->
+        <div class="w-full md:w-1/2 h-[350px] mb-4 md:mb-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.745961340439!2d88.44517707590316!3d22.959581118674883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027730302f6e25%3A0xe50dfccae21e1fc!2sJIS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1746031415835!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Image with text overlay -->
+        <div class="w-full md:w-1/2 h-[350px] relative">
+          <img src="./Assets/Venue.png" alt="JIS College" class="rounded-lg shadow-lg w-full h-full object-cover">
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 rounded-lg p-4 text-center">
+            <p class="text-lg font-semibold leading-relaxed">
+              <span class="block text-2xl font-bold">JIS COLLEGE OF ENGINEERING</span>
+              Block A, Phase III,<br>
+              Kalyani, Nadia – 741235,<br>
+              West Bengal
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id='sponsors' class="relative bg-white  px-4 py-16 min-h-[90vh] text-white ">
     <div class="flex flex-col items-center">
@@ -376,124 +418,132 @@
       </div>
     </div>
   </section>
- <section id="contact" class="py-8 px-4 bg-[black] text-white min-h-auto">
-  <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-16 px-6">
+  <section id="contact" class="py-8 px-4 bg-[black] text-white min-h-auto">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-16 px-6">
 
-    <!-- Left Section -->
-    <div class="flex flex-col gap-3 border-b md:border-r  md:border-b-0 border-blue-500 pr-6 pb-6 md:pb-0">
-      <h4 class="text-lg font-semibold">Department of Electronics and Communication Engineering</h4>
-      <p class="text-sm text-gray-300">JIS COLLEGE OF ENGINEERING</p>
-      <p class="text-sm text-gray-400">Kalyani, Nadia</p>
+      <!-- Left Section -->
+      <div class="flex flex-col gap-3 border-b md:border-r  md:border-b-0 border-blue-500 pr-6 pb-6 md:pb-0">
+        <h4 class="text-lg font-semibold">Department of Electronics and Communication Engineering</h4>
+        <p class="text-sm text-gray-300">JIS COLLEGE OF ENGINEERING</p>
+        <p class="text-sm text-gray-400">Kalyani, Nadia</p>
 
-      <div class="flex items-center">
-        <span
-          class="w-7 h-7 flex items-center justify-center border-2 border-[#0098DF] rounded-full text-[#0098DF] mr-2">
-          <i class="fa-solid fa-phone text-xs"></i>
-        </span>
-        <a href="tel:+918976444530" class="text-sm text-gray-300 hover:text-white"> 033 2582 2138</a>
+        <div class="flex items-center">
+
+        </div>
+
+        <div class="flex items-center">
+
+        </div>
       </div>
 
-      <div class="flex items-center">
-        <span
-          class="w-7 h-7 flex items-center justify-center border-2 border-[#0098DF] rounded-full text-[#0098DF] mr-2">
-          <i class="fa-solid fa-envelope text-xs"></i>
-        </span>
-        <a href="mailto:sayani908@gmail.com" class="text-sm text-gray-300 hover:text-white">info.jiscollege@jisgroup.org</a>
-      </div>
-    </div>
-
-    <!-- Middle Section -->
-    <div class="flex flex-col gap-3 border-b md:border-r md:border-b-0 border-blue-500 px-6 pb-6 md:pb-0">
-      <h4 class="text-lg font-semibold">For Queries</h4>
-      <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
-        <li>Prof. Anirban Ghosal (<a href="tel:+91819087788" class="underline hover:text-white">+91 7003959912</a>)</li>
-      </ul>
-    </div>
-
-    <!-- Right Section -->
-    <div class="flex flex-col gap-3 pl-6">
-      <h4 class="text-lg font-semibold">Useful Links</h4>
-      <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
-        <li><a href="#home" class="nav-link hover:text-white underline">Home</a></li>
-        <li><a href="#about" class="nav-link hover:text-white underline">About us</a></li>
-        <li><a href="#rules" class="nav-link hover:text-white underline">Rules & Regulations</a></li>
-      </ul>
-    </div>
-  </div>
-<hr class="brder-2 border-blue-500 mt-8"/>
-
-
-<!-- Team Section Heading -->
-
-
-<!-- Right-Aligned Wrapper -->
-<div class="w-full flex justify-end pr-6">
-  <div class="w-full md:w-[90%] lg:w-[90%]">
-
-    <!-- Section Heading -->
-    <h3 class="text-lg md:text-md font-bold text-blue-500 text-center m-6">
-      Organizing Committee & Contributors
-    </h3>
-
-    <!-- Three Column Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-justify">
-
-      <!-- Organizing Committee -->
-      <div class="flex flex-col gap-4">
-        <h4 class="text-lg font-semibold text-white">Organizing Committee</h4>
-        <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
-          <li>Chief Patron: Mr. Taranjit Singh, MD, JIS Group</li>
-          <li>Patrons: Mr. Simarpreet Singh, Mr. U. S. Mukherjee</li>
-          <li>Mentor: Prof (Dr) Partha Sarkar</li>
-          <li>Technical Advisor: Dr. Biswarup Neogi</li>
-          <li>Convenor: Dr. Moumita Pal</li>
-          <li>Joint Secretary: Dr. Indranath Sarkar, Anirban Ghosal</li>
-          <li>Program Coordination: Dr. Moumita Pal, Dr. Indranath Sarkar, Anirban Ghosal, Kunal Nag</li>
-          <li>Evaluation: Ranjana Ray, Dr. Madhura Chakraborty</li>
-          <li>Sponsorship: Anirban Ghosal, Dr. Madhura Chakraborty</li>
+      <!-- Middle Section -->
+      <div class="flex flex-col gap-4 border-b md:border-r md:border-b-0 border-blue-500 px-6 pb-6 md:pb-0">
+        <h4 class="text-lg font-semibold text-blue-400 border-b border-blue-500 pb-2">For Queries</h4>
+        <ul class="space-y-4 text-sm text-gray-300">
+          <li class="flex flex-col">
+            <span class="font-medium text-white">Prof. Anirban Ghosal</span>
+            <a href="tel:+91819087788" class="text-blue-400 underline hover:text-blue-300">+91 7003959912</a>
+            <a href="mailto:anirban.ghosal@jiscollege.ac.in" class="text-blue-400 underline hover:text-blue-300">
+              anirban.ghosal@jiscollege.ac.in
+            </a>
+          </li>
         </ul>
       </div>
 
-      <!-- Support & Logistics -->
-      <div class="flex flex-col gap-4">
-        <h4 class="text-lg font-semibold text-white">Support & Logistics</h4>
+      <!-- Right Section -->
+      <div class="flex flex-col gap-3 pl-6">
+        <h4 class="text-lg font-semibold">Useful Links</h4>
         <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
-          <li>Local Steering Committee: Dr. Debasish Sanki, Dr. Soumyabrata Saha, Dr. Sandip Ghosh</li>
-          <li>Registration: Ranjana Ray, Munmun Pramanik, Sampa Mahato</li>
-          <li>Printing & Publicity: Sourish Halder</li>
-          <li>Finance: Dr. Anirban Patra</li>
-          <li>Hospitality: Aniruddha Ghosh, Surojit Bhowmik, Rajib Sengupta, Sanjit Das</li>
-          <li>Logistics: Ranjana Ray, Dr. Madhura Chakraborty</li>
-          <li>Venue (Stage): Ranjana Ray, Dr. Madhura Chakraborty, Sampa Mahato</li>
-          <li>Venue (Exhibition): Kunal Nag, Sourish Halder, Surojit Bhowmik</li>
-          <li>Transport: Mainuck Das, Rajib Sengupta</li>
-          <li>Accommodation: Dr. Madhura Chakraborty, Nirmal Biswas</li>
-          <li>Medical Arrangement: Rajib Sengupta</li>
+          <li><a href="#home" class="nav-link hover:text-white underline">Home</a></li>
+          <li><a href="#about" class="nav-link hover:text-white underline">About us</a></li>
+          <li><a href="#rules" class="nav-link hover:text-white underline">Rules & Regulations</a></li>
         </ul>
       </div>
-
-      <!-- Student Volunteers -->
-      <div class="flex flex-col gap-4">
-        <h4 class="text-lg font-semibold text-white">Student Volunteers</h4>
-        <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
-          <li>Snehal Bhowmik</li>
-          <li>Alok Thakur</li>
-          <li>Ayush Gupta</li>
-        </ul>
-      </div>
-
     </div>
-  </div>
-</div>
+    <hr class="brder-2 border-blue-500 mt-8" />
 
-  <!-- Scroll to top button -->
-  <div class="flex justify-end mt-6 max-w-7xl mx-auto px-6 fixed bottom-4 right-4 z-50">
-    <button id="scrollToTopBtn"
-      class="hidden h-[50px] w-[50px] bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-all">
-      <i class="fa-solid fa-arrow-up text-white text-lg"></i>
-    </button>
-  </div>
-</section>
+
+    <!-- Team Section Heading -->
+
+
+    <!-- Right-Aligned Wrapper -->
+    <div class="w-full flex justify-end pr-6">
+      <div class="w-full md:w-[90%] lg:w-[90%]">
+
+        <!-- Section Heading -->
+        <h3 class="text-lg md:text-md font-bold text-blue-500 text-center m-6">
+          Organizing Committee & Contributors
+        </h3>
+
+        <!-- Three Column Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-justify">
+
+          <!-- Organizing Committee -->
+          <div class="flex flex-col gap-4">
+            <h4 class="text-lg font-semibold text-white">Organizing Commitee</h4>
+            <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
+              <li>Chief Patron: Mr. Taranjit Singh, MD, JIS Group</li>
+              <li>Patrons: Mr. Simarpreet Singh, Mr. U. S. Mukherjee</li>
+              <li>Mentor: Prof (Dr) Partha Sarkar</li>
+              <li>Technical Advisor: Dr. Biswarup Neogi</li>
+              <li>Convenor: Dr. Moumita Pal</li>
+              <li>Joint Secretary: Dr. Indranath Sarkar, Anirban Ghosal</li>
+              <li>Program Coordination: Dr. Moumita Pal, Dr. Indranath Sarkar, Anirban Ghosal, Kunal Nag</li>
+              <li>Evaluation: Ranjana Ray, Dr. Madhura Chakraborty</li>
+              <li>Sponsorship: Anirban Ghosal, Dr. Madhura Chakraborty</li>
+            </ul>
+          </div>
+
+          <!-- Support & Logistics -->
+          <div class="flex flex-col gap-4">
+            <h4 class="text-lg font-semibold text-white">Support & Logistics</h4>
+            <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
+              <li>Local Steering Committee: Dr. Debasish Sanki, Dr. Soumyabrata Saha, Dr. Sandip Ghosh</li>
+              <li>Registration: Ranjana Ray, Munmun Pramanik, Sampa Mahato</li>
+              <li>Printing & Publicity: Sourish Halder</li>
+              <li>Finance: Dr. Anirban Patra</li>
+              <li>Hospitality: Aniruddha Ghosh, Surojit Bhowmik, Rajib Sengupta, Sanjit Das</li>
+              <li>Logistics: Ranjana Ray, Dr. Madhura Chakraborty</li>
+              <li>Venue (Stage): Ranjana Ray, Dr. Madhura Chakraborty, Sampa Mahato</li>
+              <li>Venue (Exhibition): Kunal Nag, Sourish Halder, Surojit Bhowmik</li>
+              <li>Transport: Mainuck Das, Rajib Sengupta</li>
+              <li>Accommodation: Dr. Madhura Chakraborty, Nirmal Biswas</li>
+              <li>Medical Arrangement: Rajib Sengupta</li>
+            </ul>
+          </div>
+
+          <!-- Student Volunteers -->
+          <div class="flex flex-col gap-4">
+            <h4 class="text-lg font-semibold text-white">Student Commitee</h4>
+            <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
+              <li> Sabbir Ali</li>
+              <li> Joy Singha Roy</li>
+              <li> Sayani Pal</li>
+              <li>Taniya Das</li>
+              <li> Isha Ball</li>
+              <li> Tanima Nag</li>
+              <li> Pushkar Paul</li>
+              <li> Suman Bera</li>
+              <li> Soumyadeep Mukherjee</li>
+              <li> Subhadip Hait</li>
+              <li> Biki Mukherjee</li>
+              <li> Biki Mukherjee</li>
+              <li> Satyam Raj</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <div class="flex justify-end mt-6 max-w-7xl mx-auto px-6 fixed bottom-4 right-4 z-50">
+      <button id="scrollToTopBtn"
+        class="hidden h-[50px] w-[50px] bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-all">
+        <i class="fa-solid fa-arrow-up text-white text-lg"></i>
+      </button>
+    </div>
+  </section>
 
   <!-- Your JS -->
   <script src="index.js"></script>
