@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
 function toggleScrollBtn() {
   const hash = window.location.hash;
   const scrollY = window.scrollY;
-  console.log('scrollY:', scrollY); // Debugging log
+
   if (scrollY > 200) {
     scrollBtn.classList.remove('hidden');
     
-    console.log('Button is visible');
+    
   } else {
     scrollBtn.classList.add('hidden');
     console.log('Button is hidden');
