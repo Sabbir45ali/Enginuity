@@ -8,6 +8,9 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Add this inside <head> -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     html {
@@ -189,13 +192,13 @@
               <a href="https://forms.gle/9ZaNeT7MAPS6L3DD8" target="_blank" class="text-cyan-400 hover:underline">Online
                 Registration Link</a>
             </li>
-            <li class="text-white">
-              <strong class="text-cyan-400 hover:underline">Registration Fees Paymnet</strong><br>
-              Account Name: JIS College of Engineering Icame A/c<br>
-              Account No: 6619000100037177<br>
-              Bank Name: Punjab National Bank<br>
-              Branch: Kanchrapara<br>
-              IFSC: PUNB0661900
+            <li>
+              <strong class="text-cyan-400 text-lg hover:underline">Registration Fees Payment</strong>
+              <img src="./Assets/Payment Qr.jpg" alt="Payment QR"
+                class="w-40 md:w-48 rounded-lg border-2 border-cyan-400 shadow-md" />
+              <p>
+                UPI Id : ani2301sbi@ibl
+              </p>
             </li>
             <li>
               <a href="./Brochure text.docx" download class="text-cyan-400 hover:underline">
@@ -252,48 +255,72 @@
 
 
       <!-- Categories Container -->
-      <div
-        class="bg-[#0A1A2E] bg-opacity-30 p-10 rounded-3xl border-2 border-black shadow-xl flex flex-col items-center justify-center">
-        <!-- Heading -->
-        <h2 class="text-2xl font-bold text-white mb-5">Categories:</h2>
-
-        <!-- Flex Layout for Columns -->
-        <div class="flex flex-col md:flex-row gap-10 items-start justify-between w-full max-w-5xl">
-
-          <!-- Column 1 -->
-          <div class="flex-1 p-4 rounded-lg">
-            <h3 class="text-[22px] font-semibold text-cyan-200 mb-4">1. Embedtronics</h3>
-            <ul class="list-disc list-inside text-gray-200 space-y-2">
-              <li class="text-[15px] leading-snug">IoT & AI Powered Smart Home or Smart City Solutions</li>
-              <li class="text-[15px] leading-snug">IoT-Based Environmental Monitoring</li>
-              <li class="text-[15px] leading-snug">Agricultural Automation Tools</li>
-              <li class="text-[15px] leading-snug">Home Security Systems</li>
-              <li class="text-[15px] leading-snug">Sustainable Irrigation or Water Purification Systems</li>
-              <li class="text-[15px] leading-snug">Industrial Automation Prototypes</li>
-              <li class="text-[15px] leading-snug">Sensor-based Automation Systems</li>
-              <li class="text-[15px] leading-snug">Humanoid Robots</li>
-              <li class="text-[15px] leading-snug">Miscellaneous Innovations in Embedded Technologies</li>
-            </ul>
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <div class="inline-block border border-cyan-400">
+          <div class="text-6xl font-bold text-cyan-400 bg-[#0B0F1C] px-4 py-2 mb-2 mx-6">
+            Categories
           </div>
-          <!-- Column 2 -->
-          <div class="flex-1 p-4 rounded-lg">
-            <h3 class="text-[22px] font-semibold text-cyan-200 mb-4">2. EnerTronix</h3>
-            <ul class="list-disc list-inside text-gray-200 space-y-2">
-              <li class="text-[15px] leading-snug">Solar-Powered Gadgets Or Appliances</li>
-              <li class="text-[15px] leading-snug">Energy Harvesting Devices</li>
-              <li class="text-[15px] leading-snug">Portable Wind Or Hydro Generators</li>
-              <li class="text-[15px] leading-snug">IoT & AI Powered Smart Measurement or Monitoring Tools</li>
-              <li class="text-[15px] leading-snug">Smart Measurement Tools</li>
-              <li class="text-[15px] leading-snug">Automated Test Rigs Or Simulators</li>
-              <li class="text-[15px] leading-snug">Motor Control Systems and Actuators</li>
-              <li class="text-[15px] leading-snug">Autonomous Drones or Vehicles</li>
-              <li class="text-[15px] leading-snug">Wearable Health Monitors</li>
-              <li class="text-[15px] leading-snug">Miscellaneous Innovations in Green Tech and Mechatronics</li>
-            </ul>
-          </div>
-
         </div>
       </div>
+
+
+      <!-- Boxes -->
+      <div class="flex flex-col md:flex-row justify-center items-start gap-10 px-4 md:px-10 pb-10">
+
+        <!-- Embedtonics Box -->
+        <div class="bg-[#101523] border-2 border-cyan-400 rounded-3xl p-6 w-full md:w-1/2 space-y-4">
+          <h2 class="text-2xl font-semibold text-center text-white">Embedtonics</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-4"><i class="fas fa-home w-6 h-6 text-cyan-400 mt-1"></i> IOT & AI Powered
+              Smart Home or Smart City Solutions</li>
+            <li class="flex items-start gap-4"><i class="fas fa-leaf w-6 h-6 text-cyan-400 mt-1"></i> IOT Based
+              Environmental Monitoring</li>
+            <li class="flex items-start gap-4"><i class="fas fa-tractor w-6 h-6 text-cyan-400 mt-1"></i> Agriculture
+              Automation Tools</li>
+            <li class="flex items-start gap-4"><i class="fas fa-tint w-6 h-6 text-cyan-400 mt-1"></i> Sustainable
+              Irrigation or Water Purifier Systems</li>
+            <li class="flex items-start gap-4"><i class="fas fa-shield-alt w-6 h-6 text-cyan-400 mt-1"></i> Home
+              Security Systems</li>
+            <li class="flex items-start gap-4"><i class="fas fa-industry w-6 h-6 text-cyan-400 mt-1"></i> Industrial
+              Automation Prototypes</li>
+            <li class="flex items-start gap-4"><i class="fas fa-robot w-6 h-6 text-cyan-400 mt-1"></i> Humanoid Robots
+            </li>
+            <li class="flex items-start gap-4"><i class="fas fa-broadcast-tower w-6 h-6 text-cyan-400 mt-1"></i> Sensor
+              Based Automation Systems</li>
+            <li class="flex items-start gap-4"><i class="fas fa-lightbulb w-6 h-6 text-cyan-400 mt-1"></i> Miscellaneous
+              Innovations in Embedded Technologies</li>
+          </ul>
+        </div>
+
+        <!-- EnerTronics Box -->
+        <div class="bg-[#101523] border-2 border-cyan-400 rounded-3xl p-6 w-full md:w-1/2 space-y-4">
+          <h2 class="text-2xl font-semibold text-center text-white">EnerTronics</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-4"><i class="fas fa-solar-panel w-6 h-6 text-cyan-400 mt-1"></i>
+              Solar-Powered Gadgets or Appliances</li>
+            <li class="flex items-start gap-4"><i class="fas fa-bolt w-6 h-6 text-cyan-400 mt-1"></i> Energy Harvesting
+              Devices</li>
+            <li class="flex items-start gap-4"><i class="fas fa-wind w-6 h-6 text-cyan-400 mt-1"></i> Portable Wind or
+              Hydro Generators</li>
+            <li class="flex items-start gap-4"><i class="fas fa-network-wired w-6 h-6 text-cyan-400 mt-1"></i> IOT and
+              AI Power Smart Measurement or Monitoring Tools</li>
+            <li class="flex items-start gap-4"><i class="fas fa-vial w-6 h-6 text-cyan-400 mt-1"></i> Automated Test
+              Rigs or Simulators</li>
+            <li class="flex items-start gap-4"><i class="fas fa-cogs w-6 h-6 text-cyan-400 mt-1"></i> Motor Control
+              Systems and Actuators</li>
+            <li class="flex items-start gap-4"><i class="fas fa-drone w-6 h-6 text-cyan-400 mt-1"></i> Automated Drones
+              or Vehicles</li>
+            <li class="flex items-start gap-4"><i class="fas fa-heartbeat w-6 h-6 text-cyan-400 mt-1"></i> Wearable
+              Health Monitors</li>
+            <li class="flex items-start gap-4"><i class="fas fa-seedling w-6 h-6 text-cyan-400 mt-1"></i> Miscellaneous
+              Innovations in Green Tech and Mechatronics</li>
+          </ul>
+        </div>
+
+      </div>
+
+
 
       <!-- Rules & Regulationss -->
       <div id="rules"
