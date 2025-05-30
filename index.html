@@ -26,6 +26,8 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+     
+  
   </style>
 </head>
 
@@ -256,21 +258,33 @@
 
       <!-- Categories Container -->
       <!-- Header -->
-      <div class="text-center mb-8">
-        <div class="inline-block border border-cyan-400">
-          <div class="text-6xl font-bold text-cyan-400 bg-[#0B0F1C] px-4 py-2 mb-2 mx-6">
-            Categories
-          </div>
-        </div>
+      <div class="relative flex justify-center mb-12">
+        <div class="absolute h-20 w-0.5 bg-cyan-400 left-1/4 top-9"></div>
+        <div class="absolute h-20 w-0.5 bg-cyan-400 right-1/4 top-9"></div>
+
+  <!-- Horizontal Line -->
+       <div class="absolute top-[35px] left-1/4 right-1/4 h-0.5 bg-cyan-400 z-0"></div>
+
+  <!-- Categories Block with Arrow -->
+      <div class="relative flex items-center bg-[#101523] text-cyan-500 font-bold text-2xl h-12 px-6 pr-10">
+          Categories
+    <!-- Right Cut Triangle -->
+        <div class="absolute right-0 top-0 h-full w-6 bg-cyan-400 clip-triangle"></div>
       </div>
+    </div>
 
 
-      <!-- Boxes -->
+
+
+
+ <!-- Boxes -->
       <div class="flex flex-col md:flex-row justify-center items-start gap-10 px-4 md:px-10 pb-10">
 
         <!-- Embedtonics Box -->
-        <div class="bg-[#101523] border-2 border-cyan-400 rounded-3xl p-6 w-full md:w-1/2 space-y-4">
-          <h2 class="text-2xl font-semibold text-center text-white">Embedtonics</h2>
+        <div class="relative bg-[#101523] border-2 border-cyan-400 rounded-3xl p-6 w-full md:w-1/2 space-y-4">
+          <div class="absolute -top-4 left-0 right-0 mx-auto text-2xl w-60 text-center bg-[#0B4B66] text-white font-bold py-2 rounded-xl border border-cyan-400 z-10">
+            Embedtonics
+          </div>
           <ul class="space-y-4">
             <li class="flex items-start gap-4"><i class="fas fa-home w-6 h-6 text-cyan-400 mt-1"></i> IOT & AI Powered
               Smart Home or Smart City Solutions</li>
@@ -294,8 +308,11 @@
         </div>
 
         <!-- EnerTronics Box -->
-        <div class="bg-[#101523] border-2 border-cyan-400 rounded-3xl p-6 w-full md:w-1/2 space-y-4">
-          <h2 class="text-2xl font-semibold text-center text-white">EnerTronics</h2>
+        <div class="relative bg-[#101523] border-2 border-cyan-400 rounded-3xl p-6 w-full md:w-1/2 space-y-4">
+         <div class="absolute -top-4 left-0 right-0 mx-auto w-60 text-center bg-[#0B4B66] text-white font-bold py-2 rounded-xl border text-2xl border-cyan-400 z-10">
+            EnerTronics
+          </div>
+
           <ul class="space-y-4">
             <li class="flex items-start gap-4"><i class="fas fa-solar-panel w-6 h-6 text-cyan-400 mt-1"></i>
               Solar-Powered Gadgets or Appliances</li>
