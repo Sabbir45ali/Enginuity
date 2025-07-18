@@ -27,6 +27,24 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
   </style>
 </head>
 
@@ -48,10 +66,10 @@
           <a href="https://www.ieindia.org/webui/iei-home.aspx" target="_blank">
             <img src="./Assets/IEI.jpg" alt="Logo" class="h-12 w-auto" />
           </a>
-           <a href="https://www.jiscollege.ac.in/" target="_blank">
+          <a href="https://www.jiscollege.ac.in/" target="_blank">
             <img src="./Assets/25_yrs_jis_logo.png" alt="Logo" class="h-12 w-auto" />
           </a>
-           <a href="https://www.ieee.org/" target="_blank">
+          <a href="https://www.ieee.org/" target="_blank">
             <img src="./Assets/IEEE_logo.png" alt="Logo" class="h-12 w-auto" />
           </a>
           <a href="https://mic.gov.in/" target="_blank">
@@ -121,10 +139,21 @@
         ENGINUITY <p class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-300">
           August 8<sup>th</sup>–9<sup>th</sup>
         </p>
-
       </h1>
-
+      <div class="relative flex justify-end mt-2 z-20">
+        <div
+          class="bg-[#0f172a] border border-cyan-400 text-cyan-300 px-4 py-3 rounded-lg shadow-xl w-[90%] max-w-[320px] sm:max-w-[350px] text-xs sm:text-sm md:text-base text-left animate-float">
+          <strong class="text-cyan-400 block mb-1">Travel Assistance for outside state participants:</strong>
+          Second class sleeper fare will be reimbursed for outside state participants. Maximum limit of total
+          reimbursement
+          up to ₹2000 for to and fro journey. Maximum ten groups will get this reimbursement on a first-come,
+          first-serve
+          basis.
+        </div>
+      </div>
     </div>
+
+
   </section>
   <!-- About Section -->
   <section id="about" class="relative min-h-[100vh] bg-gradient-to-b from-[#00121E] to-transparent px-4 py-8">
@@ -387,7 +416,8 @@
               lead more than one team.
             </li>
             <li class="flex items-start">
-              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>All participants must register online before the deadline. Late entries will be accepted, with an additional charge.
+              <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>All participants must
+              register online before the deadline. Late entries will be accepted, with an additional charge.
             </li>
             <li class="flex items-start">
               <span class="text-cyan-400 mr-2"><i class="fa-solid fa-arrow-right"></i></span>Participants can use any
@@ -551,7 +581,7 @@
 
         <!-- Section Heading -->
         <h3 class="text-lg md:text-md font-bold text-blue-500 text-center  m-6">
-          Organizing Committee 
+          Organizing Committee
         </h3>
 
         <!-- Three Column Grid -->
